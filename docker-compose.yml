@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+    ### Workspace Utilities Container ###########################
+    workspace:
+        build:
+            context: ./workspace
+        volumes_from:
+            - volumes_source
+        tty: true
+
+    ### Python Application Code Container ######################
+    volumes_source:
+        image: tianon/true
+        volumes:
+            - ../pydev/:/home/pydock/dev

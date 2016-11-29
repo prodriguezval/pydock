@@ -1,0 +1,5 @@
+virtualenv
+NumPy
+matplotlib
+SciPy
+sklearn
